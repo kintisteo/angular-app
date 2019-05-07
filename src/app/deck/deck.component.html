@@ -1,0 +1,47 @@
+<h2>All Cards</h2>
+
+
+<div class="parent">
+
+  <ol class="cards">
+    <li class="cardListItem"
+        *ngFor="let eachModel of deck"
+        [class.selected]="eachModel=== selectedCard"
+        (click)="onSelect(eachModel)"
+    >
+      {{eachModel.name}} -- {{eachModel.card_type}}
+
+    </li>
+  </ol>
+
+  <div *ngIf="selectedCard" class="details">
+    <h3>You selected: {{selectedCard.name}}</h3>
+    <div>
+      <img src="http://52.57.88.137/api/card_image/{{selectedCard.name}}">
+
+      <div class="description">
+        <h3>Description</h3>
+        <br>
+        <div class="spanakia">
+          <span>Text: {{text}}</span>
+          <br>
+          <span>Card Type: {{card_type}}</span>
+          <br>
+          <span>Family: {{family}}</span>
+          <br>
+          <span>Attack: {{atk}}</span>
+          <br>
+          <span>Defence: {{def}}</span>
+          <br>
+          <span>Level: {{level}}</span>
+          <br>
+
+        </div>
+
+      </div>
+    </div>
+
+
+  </div>
+
+</div>

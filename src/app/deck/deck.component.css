@@ -1,0 +1,33 @@
+.parent{
+    display: flex;
+}
+
+.description{
+    display: inline-block;
+    position: absolute;
+    margin-left: 1%;
+}
+
+.spanakia{
+    text-align: left;
+    background: #fff0cd;
+}
+
+.cards{
+    background: #3283ff;
+    padding: 0.5em 1em 0.5em 1.5em;
+    margin: 1em;
+    max-width: 16em;
+}
+
+.cards .cardListItem{
+    font-size: 0.875em;
+    background: #fff0cd;
+    padding: 0.3em;
+    margin: 0.2em;
+}
+
+.selected {
+    background: #ff0ad7 !important;
+    color: #ffffff;
+}
